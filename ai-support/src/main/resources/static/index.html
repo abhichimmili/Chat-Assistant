@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Support Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="chat-header">
+        	
+            <div class="avatar">AI</div>
+
+            <div>
+                <h2>AI Support Assistant</h2>
+                <p><span class="status-dot"></span> Online</p>
+            </div>
+            <button id="newChatButton" type="button">+ New Chat</button>
+        </header>
+
+        <main class="chat-body" id="chatBody">
+
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! 👋 Welcome to AI Support.
+
+                    <br>
+
+                    I'm here to help you with products, orders,
+                    returns, payments, and general support.
+
+                    <br>
+
+                    How can I help you today?
+                </div>
+            </div>
+
+        </main>
+
+        <div class="typing-indicator" id="typingIndicator">
+            AI is typing...
+        </div>
+
+        <form class="chat-input-area" id="chatForm">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit" id="sendButton">
+                Send ➤
+            </button>
+
+        </form>
+
+        <footer>
+            AI Support Assistant · Powered by Gemini
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
